@@ -1,0 +1,86 @@
+/* Reset de Estilização */
+
+:root {
+  --background: #191919;
+  --text: #a7a7a7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font=size: 65.5%; /* 1rem = 10px */
+}
+
+a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+ul {
+  list-style: none;
+}
+
+i {
+  font-size: 1.5rem;
+}
+
+/* Classes auxiliares */
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--background);
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.header .logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.header ul {
+  display: flex;
+  align-items: center;
+}
+
+.link-navegacao ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icons li a {
+  width: 2rem;
+  height: 2rem;
+
+  background-color: var(--text);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  /*  background-color: var(--text); */
+}
+
+.social-icons li a i {
+  color: var(--background);
+  font-weight: 500;
+}
